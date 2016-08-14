@@ -19,6 +19,9 @@ echo "Выполнено красками - $paint_pic (<b>Задача 2</b>)";
 
 echo "<br><br>";
 define("DOMBUDKA", 100, true);
+if (defined("DOMBUDKA")){
+    echo "<br>DOMBUDKA -существует<br>";
+}
 
 
 // echo isset(DomBudka);
@@ -92,11 +95,20 @@ $opel = array(
 	"year" => 2014
 	);
 
+$car = [$bmw, $toyota, $opel];
 
-echo "Car bmw : (Задача 6) <br>" . "$bmw[model] $bmw[speed] $bmw[doors] $bmw[year]" . "<br>";
-echo "Car toyota : (Задача 6) <br>" . "$toyota[model] $toyota[speed] $toyota[doors] $toyota[year]" . "<br>";
-echo "Car opel : (Задача 6) <br>" . "$opel[model] $opel[speed] $opel[doors] $opel[year]";
 
+
+// echo "Car bmw : (Задача 6) <br>" . "$bmw[model] $bmw[speed] $bmw[doors] $bmw[year]" . "<br>";
+// echo "Car toyota : (Задача 6) <br>" . "$toyota[model] $toyota[speed] $toyota[doors] $toyota[year]" . "<br>";
+// echo "Car opel : (Задача 6) <br>" . "$opel[model] $opel[speed] $opel[doors] $opel[year]" . " <br>";
+// $arrResult = $opel + $toyota + $bmw;
+// print_r($arrResult);
+
+foreach ($car as $value) {
+    echo "Car " .$value['name'] . "<br />";
+    echo $value['model'] . " - " . $value['speed']. " - " . $value['doors']. " - " . $value['year'] . "<br /><br />";
+}
 //7 
 
 echo "<br><br> <b>Таблица умножения</b> :<br>";
@@ -134,3 +146,9 @@ echo "$strArr[0]" . "$strArr[1]";
   { 
      echo $strArr[$i]; 
   } 
+
+echo "<br>";
+while(list(, $value) = each($strArr))
+{
+echo $value . ',';   
+}
