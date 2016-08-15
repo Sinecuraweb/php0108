@@ -4,22 +4,42 @@
 function calc_uno($array,$action = "NULL"){
 	foreach ($array as $value) {
 
+
 		if (!is_numeric($value)) {
                 exit("Не корректный ввод чисел, попробуйте ещё");
             }
-		while ( $i > 0 ) {
-				--$i;
-			echo "$i";
-			
-			$resultSub= $array[$i] - $array[$i-1];
 
-		}
+		// while ( $i <= 10 ) {
+			
+		// 	// echo "$i";
+		// 	$i++;
+		// 	echo "<br>" . $array[i];
+			
+		// 	$resultSub= $array[$i] - $array[$i-1];
+
+
+		// }
+            
+
+
+
+	
 		// $resultSub -=$value; //Все равно складывает?
 		$resultSum +=$value;
 
 
 		
 	}
+
+	// for ($i = 0; $i <= count($array); $i++) { 
+	// 	    	echo $array[$i]." ";
+	// 	    	$resultSub= $array[$i] - $array[$i+1];
+	// 	    	echo "res1" . "<br>" . $resultSub; 
+	// 	  	} 
+
+		  	echo "<br> Колчиество элементов " . count($array) . "<br>";
+
+
 	$strSum =  "Сумма всех элементов в массиве " .  " = " . " " . "$resultSum";
 	$strSub =  "Разница всех элементов в массиве " .  " = " . " " . "$resultSub";
 
@@ -34,16 +54,19 @@ function calc_uno($array,$action = "NULL"){
     }
 }
 
+
 $numberArray = [1,5,7];
-$arResult = calc_uno($numberArray, sum);
+echo "<br> Разница 2х элементов в массиве = " . $numberArray[1];
+$arResult = calc_uno($numberArray, sub);
 echo $arResult;
+
 
 
 ?>
 
 
 <? 
-$i = 5;
+// $i = 0;
 // while ( $i > 0 ) {
 			
 		
