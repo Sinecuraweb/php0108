@@ -3,7 +3,7 @@
 <?php
 
 
-$strPalindrom = "1111";
+
 
 function palindrom_func($strPalindrom){
 
@@ -17,20 +17,23 @@ function palindrom_func($strPalindrom){
 	 else {
 	 	return false;
 	 }
+}
 
+$arResult = palindrom_func($strPalindrom);
 
-	 	function print_palindrom(){
+function print_palindrom($arResult){
 
-		
-		echo palindrom_func($strPalindrom);
+	if ($arResult == true) {
+		echo "Палиндром";
 	}
 
+	else echo "Не Палиндром";
+	
 }
-// $arResult = 
-// 	 echo "Бул" . "=" . $arResult;
 
-// $strPrint = palindrom_func("11131");
-// echo $strPrint;
+
+$strPrint = palindrom_func("122111");
+echo $strPrint;
 
 
 
