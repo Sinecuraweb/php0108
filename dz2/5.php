@@ -2,9 +2,6 @@
 
 <?php
 
-
-
-
 function palindrom_func($strPalindrom){
 
 
@@ -19,9 +16,9 @@ function palindrom_func($strPalindrom){
 	 }
 }
 
-$arResult = palindrom_func($strPalindrom);
+// $arResult = palindrom_func($strPalindrom);
 
-function print_palindrom($arResult){
+function print_palindrom(palindrom_func($strPalindrom)) {
 
 	if ($arResult == true) {
 		echo "Палиндром";
@@ -34,10 +31,6 @@ function print_palindrom($arResult){
 
 $strPrint = palindrom_func("122111");
 echo $strPrint;
-
-
-
-
 
 ?>
 
