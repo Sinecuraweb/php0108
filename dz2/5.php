@@ -16,11 +16,11 @@ function palindrom_func($strPalindrom){
 	 }
 }
 
-// $arResult = palindrom_func($strPalindrom);
+$bool = palindrom_func($strPalindrom);
 
-function print_palindrom(palindrom_func($strPalindrom)) {
+function print_palindrom($bool) {
 
-	if ($arResult == true) {
+	if ($bool == true) {
 		echo "Палиндром";
 	}
 
@@ -29,8 +29,10 @@ function print_palindrom(palindrom_func($strPalindrom)) {
 }
 
 
-$strPrint = palindrom_func("122111");
-echo $strPrint;
+$strPalindrom = 0000;
+
+echo print_palindrom(palindrom_func($strPalindrom));
+
 
 ?>
 
