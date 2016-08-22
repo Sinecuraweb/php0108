@@ -1,0 +1,18 @@
+{
+  "orderID": 773,
+  "shopperName": "Трегубенко Егор",
+  "shopperEmail": "sinecura92@mail.ru",
+  "contents": [
+    {
+      "productID": 31,
+      "productName": "Стиральная машина bosch",
+      "quantity": 2
+    },
+    {
+      "productID": 56,
+      "productName": "Наушники, Philips",
+      "quantity": 3
+    }
+  ],
+  "orderCompleted": true
+}

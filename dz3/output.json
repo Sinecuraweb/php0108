@@ -1,0 +1,18 @@
+{
+  "orderID": 773,
+  "shopperName": "Трегубенко Егор",
+  "shopperEmail": "sinecura92@mail.ru",
+  "contents": [
+    {
+      "productID": 34,
+      "productName": "Холодильник, indesit 423jd2",
+      "quantity": 1
+    },
+    {
+      "productID": 56,
+      "productName": "Наушники, Philips",
+      "quantity": 3
+    }
+  ],
+  "orderCompleted": true
+}

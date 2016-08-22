@@ -29,9 +29,9 @@ function print_palindrom($bool) {
 }
 
 
-$strPalindrom = 0000;
+$strPalindrom = "А роза упала на лапу Азора";
 
-echo print_palindrom(palindrom_func($strPalindrom));
+print_palindrom(palindrom_func($strPalindrom));
 
 
 ?>
