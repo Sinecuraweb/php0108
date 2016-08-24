@@ -17,14 +17,36 @@ while ($i <= 100) {
 print_r($arRandom);
 
 
-
+$fields = array();
 $fp = fopen('file.csv', 'w');
 
-foreach ($arRandom as $fields) {
-    fputcsv($fp, $fields);
+
+for($i=0;$i<=count($arRandom);$i++)
+{
+    fwrite($fp,$arRandom[$i], ';');
 }
+//fwrite($fp, $arRandom);
 fclose($fp);
+
+
+
+$row = 1;
+if (($handle = fopen("file.csv", "r")) !== FALSE) {
+    while (($data = fgetcsv($handle, 1000, ",")) !== FALSE) {
+        $num = count($data);
+        echo "<p> $num полей в строке $row: <br /></p>\n";
+        $row++;
+        for ($c=0; $c < $num; $c++) {
+            echo $data[$c] . "<br />\n";
+        }
+    }
+    fclose($handle);
+}
+
+
 ?>
+
+
 
 
 
