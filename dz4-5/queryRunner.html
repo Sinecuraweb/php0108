@@ -1,0 +1,28 @@
+<html>
+ <head>
+  <link href="css/main.css" rel="stylesheet" type="text/css" />
+ </head>
+
+ <body>
+  <div id="header"><h1>Что тут</h1></div>
+  <div id="example">Форма авторизации</div>
+
+  <div id="content">
+    <h1>SQL в действии</h1>
+    <p>Введите sql запрос в поле ниже :</p>
+    <form action="scripts/run_query.php" method="POST">
+      <fieldset>                                                                                    
+        <textarea id="query_text" name="query" 
+                  cols="65" rows="8"></textarea>                                       
+      </fieldset>                                                                                   
+      <br />                                                                                        
+      <fieldset class="center">                                                                     
+        <input type="submit" value="Пуск" />
+        <input type="reset" value="Очистить поле" />
+      </fieldset>                                                                                   
+    </form>                                                                                         
+  </div>                                                                                            
+
+  <div id="footer"></div>                                                                           
+ </body>                                                                                            
+</html>
